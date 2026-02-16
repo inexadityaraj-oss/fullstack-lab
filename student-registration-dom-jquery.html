@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Registration Form</title>
+
+  <!-- CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px gray;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+    }
+
+    button {
+      padding: 10px 15px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    #message {
+      color: red;
+      font-weight: bold;
+    }
+
+    img {
+      width: 120px;
+      display: block;
+      margin: 10px auto;
+    }
+  </style>
+
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <!-- External JS -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h2 id="title">Student Registration</h2>
+
+    <form id="regForm">
+      <input type="text" id="username" placeholder="Username" />
+      <input type="text" id="email" placeholder="Email" />
+      <input type="text" id="phone" placeholder="Phone Number" />
+      <input type="password" id="password" placeholder="Password" />
+      <input type="password" id="confirm" placeholder="Confirm Password" />
+
+      <button type="button" id="submitBtn">Submit</button>
+    </form>
+
+    <p id="message"></p>
+
+    <!-- DOM Image Change -->
+    <img id="demoImg" src="https://via.placeholder.com/120" />
+    <button onclick="changeImage()">Change Image</button>
+
+    <!-- DOM Add/Delete Node -->
+    <button onclick="addText()">Add Text</button>
+    <button onclick="deleteText()">Delete Text</button>
+
+    <div id="textContainer"></div>
+
+    <!-- jQuery Button -->
+    <button id="jqBtn">jQuery Button</button>
+  </div>
+</body>
+</html>
